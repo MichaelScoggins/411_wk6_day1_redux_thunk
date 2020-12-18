@@ -56,9 +56,9 @@ const Import = (props) => {
         </TableHead>
         <TableBody>
           {props.makes.map((car, id) => (
-            <TableRow key={car.id}>
-              <TableCell>{car["MakeId"]}</TableCell>
-              <TableCell>{car["MakeName"]}</TableCell>
+            <TableRow key={id}>
+              <TableCell>{car.MakeId}</TableCell>
+              <TableCell>{car.MakeName}</TableCell>
               <MoreVert
                 aria-controls="simple-menu"
                 aria-haspopup="true"
